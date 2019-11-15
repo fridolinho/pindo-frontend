@@ -1,0 +1,14 @@
+<h2>Send bulk SMS</h2>
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Sender" [(ngModel)]="sender" value="{{sender}}">
+  </mat-form-field>
+
+  <mat-form-field>
+    <label>
+      <textarea rows="5" matInput placeholder="Message" [(ngModel)]="message" value="{{message}}"></textarea>
+    </label>
+  </mat-form-field>
+
+  <button mat-button color="primary" (click)="sendSMS()">Send</button>
+</div>
